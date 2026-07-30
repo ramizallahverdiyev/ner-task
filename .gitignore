@@ -17,6 +17,10 @@ data/raw/
 data/interim/
 *.log
 
+# Generated pipeline outputs (regenerate via the scripts; canonical copies
+# live on Hugging Face, not in this repo)
+stage1_rulecraft_cleanup/data/
+
 # OS
 .DS_Store
 Thumbs.db
