@@ -7,10 +7,12 @@ improving it based on model behavior.
 ## Overview
 
 - `stage1_rulecraft_cleanup/` — annotation policy definition and dataset
-  cleanup. Dataset: https://huggingface.co/datasets/ramiz0/ner-stage1-rulecraft-cleanup
-- Stages 2-4: in progress.
-
-Full writeup: `report.md` (in progress).
+  cleanup. Dataset: https://huggingface.co/datasets/ramiz0/ner-stage1-rulecraft-cleanup.
+  Report: `stage1_rulecraft_cleanup/report.md`.
+- `stage2_dataset_expansion/` — dataset expansion to 748 records, balanced,
+  deduplicated, split. Dataset: https://huggingface.co/datasets/ramiz0/ner-stage2-dataset-expansion.
+  Report: `stage2_dataset_expansion/report.md`.
+- Stages 3-4: in progress.
 
 ## Setup
 

@@ -1,12 +1,10 @@
-# NER Project Report
-
-## Stage 1 — Rulecraft and Cleanup
+# Stage 1 — Rulecraft and Cleanup
 
 **Dataset produced:** https://huggingface.co/datasets/ramiz0/ner-stage1-rulecraft-cleanup
 **Source dataset:** https://huggingface.co/datasets/polygraf-ai/applied-nlp-ner-candidate-starter-100
 **Scripts:** `stage1_rulecraft_cleanup/`
 
-### Approach
+## Approach
 
 The starter set was read in full before any correction was made — all 100
 records, not a sample — specifically to find recurring ambiguities the
@@ -31,7 +29,7 @@ rule set, since some patterns only become visible once the rules exist to
 test against. This caught several instances the first read missed (see
 "Second-pass findings" below).
 
-### Issues and patterns found
+## Issues and patterns found
 
 Recurring problems, roughly by frequency:
 
@@ -61,7 +59,7 @@ Recurring problems, roughly by frequency:
   random word salad, and an entirely auto-generated nonsense essay), where
   every tagged entity sat inside meaningless text rather than real language.
 
-### Policy: added rules
+## Policy: added rules
 
 Five is stated as a good minimum; 14 were added, each closing a specific,
 dataset-grounded gap and checked against the baseline and every other added
@@ -103,7 +101,7 @@ rule for contradictions. Full text with examples is in the dataset card and
     extends rule 2 to formatted identifiers (usernames, "Person1"/"Person2"
     dialogue labels).
 
-### Second-pass findings
+## Second-pass findings
 
 After the policy was finalized, every labeled span in the dataset was
 re-checked against all 14 rules. This surfaced more instances of rules
@@ -116,7 +114,7 @@ as TIMEDATE), and two new borderline cases resolved by applying the already-
 established magnitude test consistently (`every time` and `course of the
 research`, both excluded from TIMEDATE for the same reason `some time` is).
 
-### Record removal
+## Record removal
 
 Two records (of the original 100) were removed: one is a drug-advertisement
 post that degrades partway through into unrelated random words (a known spam
@@ -127,7 +125,7 @@ doesn't actually say anything — keeping them would train the model to extract
 entities from noise rather than from context. All other records were kept and
 corrected in place.
 
-### Statistics
+## Statistics
 
 - **Records reviewed:** 100
 - **Records removed:** 2 (see above)
@@ -147,7 +145,7 @@ corrected in place.
 | AMOUNT | 83 | 80 |
 | `COMPANY` (invalid label) | 8 | 0 |
 
-### Representative before/after examples
+## Representative before/after examples
 
 **Fictional country mislabeled as an institution (rule 7):**
 Before: `Asta countered the <ORGANIZATION>Spade Kingdom</ORGANIZATION>'s

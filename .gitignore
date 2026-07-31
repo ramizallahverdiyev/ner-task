@@ -20,6 +20,7 @@ data/interim/
 # Generated pipeline outputs (regenerate via the scripts; canonical copies
 # live on Hugging Face, not in this repo)
 stage1_rulecraft_cleanup/data/
+stage2_dataset_expansion/data/
 
 # OS
 .DS_Store
