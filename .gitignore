@@ -21,6 +21,9 @@ data/interim/
 # live on Hugging Face, not in this repo)
 stage1_rulecraft_cleanup/data/
 stage2_dataset_expansion/data/
+stage3_first_model_run/data/
+stage3_first_model_run/model/
+stage3_first_model_run/checkpoints/
 
 # OS
 .DS_Store

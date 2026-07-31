@@ -12,7 +12,11 @@ improving it based on model behavior.
 - `stage2_dataset_expansion/` — dataset expansion to 748 records, balanced,
   deduplicated, split. Dataset: https://huggingface.co/datasets/ramiz0/ner-stage2-dataset-expansion.
   Report: `stage2_dataset_expansion/report.md`.
-- Stages 3-4: in progress.
+- `stage3_first_model_run/` — distilbert-base-uncased fine-tuned on Stage 2
+  data, resource/throughput report, and wild-sample QA. Model:
+  https://huggingface.co/ramiz0/ner-stage3-first-model-run.
+  Report: `stage3_first_model_run/report.md`.
+- Stage 4: in progress.
 
 ## Setup
 
