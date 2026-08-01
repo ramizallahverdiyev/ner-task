@@ -24,6 +24,9 @@ stage2_dataset_expansion/data/
 stage3_first_model_run/data/
 stage3_first_model_run/model/
 stage3_first_model_run/checkpoints/
+stage4_diagnose_relabel_retrain/data/
+stage4_diagnose_relabel_retrain/model/
+stage4_diagnose_relabel_retrain/checkpoints/
 
 # OS
 .DS_Store

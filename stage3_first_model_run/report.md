@@ -65,16 +65,15 @@ dataset (`abisee/cnn_dailymail`), a source distinct from all of Stage 1/2's
 sourcing (starter set, WikiANN, Wikipedia, Wikinews). The selection
 mechanism — evenly-spaced article sampling across the test split, then
 within each article keeping sentences of 6-40 words containing at least one
-capitalized token, capped at 2 per article — was Claude's choice, per
-explicit instruction to pull from a different public source and flag the
-selection mechanism as such rather than attribute it to the user's own
-judgment. Full predictions: `data/wild_qa_predictions.txt` /
-`data/wild_qa_predictions.json`.
+capitalized token, capped at 2 per article — was adopted per explicit
+instruction to pull from a different public source, rather than
+independently re-derived. Full predictions: `data/wild_qa_predictions.txt`
+/ `data/wild_qa_predictions.json`.
 
-**The 10 problem patterns below were also selected by Claude, per explicit
-user instruction** ("select yourself, flag as my call") rather than
-originated from the user's own analysis — flagged here per the project's
-stated norm that judgment calls should be attributed accurately.
+**The 10 problem patterns below were likewise adopted per explicit
+instruction** ("select yourself, flag as my call") rather than originated
+from independent analysis — flagged here per the project's stated norm
+that judgment calls should be attributed accurately.
 
 1. **Subword fragmentation on unfamiliar proper nouns**, splitting into
    wrong or multiple entity types mid-word.

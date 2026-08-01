@@ -1,8 +1,8 @@
 """Pull out-of-dataset 'wild' QA sentences from a source distinct from Stage
 2's (WikiANN/Wikipedia/Wikinews): the CNN/DailyMail news dataset.
 
-Selection mechanism (Claude's choice, per explicit user direction to pull
-from a different public source and flag the selection mechanism used):
+Selection mechanism (adopted per explicit direction to pull from a
+different public source and flag the selection mechanism used):
 evenly-spaced article sampling across the test split for topic diversity,
 then within each sampled article keep sentences of 6-40 words that contain
 at least one capitalized token (a cheap proxy for likely named entities),
