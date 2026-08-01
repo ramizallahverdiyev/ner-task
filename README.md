@@ -4,6 +4,8 @@ A 4-stage applied NER project: reviewing and correcting an annotated dataset,
 expanding it, training a token-classification model, then diagnosing and
 improving it based on model behavior.
 
+**Full report (all 4 stages): [`REPORT.md`](REPORT.md)**
+
 ## Overview
 
 - `stage1_rulecraft_cleanup/` — annotation policy definition and dataset
@@ -16,7 +18,11 @@ improving it based on model behavior.
   data, resource/throughput report, and wild-sample QA. Model:
   https://huggingface.co/ramiz0/ner-stage3-first-model-run.
   Report: `stage3_first_model_run/report.md`.
-- Stage 4: in progress.
+- `stage4_diagnose_relabel_retrain/` — diagnosed Stage 3's 10 wild-QA
+  problem patterns, expanded/relabeled the dataset, retrained. Dataset:
+  https://huggingface.co/datasets/ramiz0/ner-stage4-diagnose-relabel-retrain.
+  Model: https://huggingface.co/ramiz0/ner-stage4-diagnose-relabel-retrain-model.
+  Report: `stage4_diagnose_relabel_retrain/report.md`.
 
 ## Setup
 
